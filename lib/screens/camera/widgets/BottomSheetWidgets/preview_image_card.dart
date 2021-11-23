@@ -17,7 +17,7 @@ class PreviewImageCard extends StatelessWidget {
     return Container(
       clipBehavior: Clip.antiAlias,
       margin: EdgeInsets.only(top: context.responsive(10)),
-      height: context.responsive(500),
+      height: context.responsive(600),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(8.0),
       ),

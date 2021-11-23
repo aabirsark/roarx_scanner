@@ -10,6 +10,7 @@ import 'package:rx_pdf/extension/context_ext.dart';
 import 'package:rx_pdf/screens/camera/camera_screen.dart';
 import 'package:rx_pdf/screens/camera/redeigned/camera_redisgned.dart';
 import 'package:rx_pdf/screens/preview/mediaFilePreview/media_file_preview.dart';
+import 'package:rx_pdf/screens/settings/settings.dart';
 import 'package:rx_pdf/utils/create_pdf_mode.dart';
 import 'package:rx_pdf/utils/current_time.dart';
 import 'package:rx_pdf/utils/custom_page_builder.dart';
@@ -263,6 +264,13 @@ class _FabMenu extends StatelessWidget {
             }
           }),
         ),
+        FabItem(
+          "Settings",
+          CupertinoIcons.settings,
+          onPress: () {
+            context.navigateTo(Settings());
+          },
+        )
       ],
       toggle,
       animation: animation,
